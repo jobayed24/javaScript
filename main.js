@@ -1,14 +1,11 @@
 ///generator function
 
-const newfun=function* (){
-    yield 'a';
-    yield 'b';
-    yield 'c';
-
+const gn=function* (i){
+yield i;
+yield i+10;
 };
-let val='';
-for(const singleValue of newfun()){
-   val=val+singleValue;
-   
-}
-console.log(val);
+
+
+const gnend=gn(10);
+console.log(gnend.next().value);
+console.log(gnend.next().value);
