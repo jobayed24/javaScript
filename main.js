@@ -1,7 +1,15 @@
-const array1 = ['a', 'b', 'c','a'];
+//make own iterable object
 
+ const newobiterable={};
 
+ newobiterable[Symbol.iterator]=function* (){
+    yield 1;
+    yield 2;
+    yield 3;
+    yield 4;
+ };
 
-const newtakeval= array1.values();
+for(const newite of newobiterable){
+    console.log(newite);    
+}
 
-console.log(newtakeval);
