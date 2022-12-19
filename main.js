@@ -1,15 +1,14 @@
-//make own iterable object
+///generator function
 
- const newobiterable={};
+const newfun=function* (){
+    yield 'a';
+    yield 'b';
+    yield 'c';
 
- newobiterable[Symbol.iterator]=function* (){
-    yield 1;
-    yield 2;
-    yield 3;
-    yield 4;
- };
-
-for(const newite of newobiterable){
-    console.log(newite);    
+};
+let val='';
+for(const singleValue of newfun()){
+   val=val+singleValue;
+   
 }
-
+console.log(val);
