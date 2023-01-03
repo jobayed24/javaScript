@@ -1,19 +1,30 @@
-// if you have list of care name and you store the data with seperate single variable 
-// then you will do it 
+// space and line breaks are not important. A declaration can span multiple line
 
-const car1="volvo";
-const car2="saab";
-const car3="BMW";
+// general way
 
-/// it's easy to print the specific value but seems you have 300 value then what happend you should use an array array is the varibale where you can store hug value doing seperate throught comma
+const car=['volvo','saab','bmw'];
 
 
-// infortent things is array have squre brackets where you put all value with make theme seperate
-const car=["volvo","saab","BMW"];
+/// an array declaration with span multiple line
 
-// you can find the specific value through reference index number
+const cars=[
+    'volvo',
+    'saab',
+    'bmw'
+];
 
-console.log(car[2]);
+// firstly you can create an empty array then provide thee elements
+
+const carsEmpty=[];
+
+carsEmpty[0]='volvo';
+carsEmpty[1]='saab';
+carsEmpty[2]='bmw';
 
 
-// it's common practice to declare array with const keyword
+// the following example will create an array and assign value to it.
+
+
+
+const carsNew=new Array('volvo','saab','bmw');
+
