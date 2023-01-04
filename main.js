@@ -1,30 +1,15 @@
-// space and line breaks are not important. A declaration can span multiple line
+// accessing array value through indexing number
 
-// general way
+carsfew= ['volvo','saab','bmw'];
 
-const car=['volvo','saab','bmw'];
+console.log(carsfew.length);
 
+// changed arrray value through index number
 
-/// an array declaration with span multiple line
+cars=['volvo','saab','bmw','ferrai','toyata','hunday','frado','lend cruiser','rang rober','limojin'];
+cars[2]="newness";
 
-const cars=[
-    'volvo',
-    'saab',
-    'bmw'
-];
+// console.log(cars);
 
-// firstly you can create an empty array then provide thee elements
-
-const carsEmpty=[];
-
-carsEmpty[0]='volvo';
-carsEmpty[1]='saab';
-carsEmpty[2]='bmw';
-
-
-// the following example will create an array and assign value to it.
-
-
-
-const carsNew=new Array('volvo','saab','bmw');
+///  in javascript you can access full array by referring to the array name
 
