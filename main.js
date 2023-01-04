@@ -1,27 +1,26 @@
-cars= [
-    'ferrari',
+const cars=[
     'saab',
     'bmw',
-    'toyta',
     'chevrolet',
-    'honda',
-    'nissan',
-    'ford',
-    'fiat',
-    'jeep',
-    'volkswagen',
-    'jaguar',
-    'audi',
-    'land rover',
-    'lexus',
-    'porsche',
-    'bugatti',
-    'bentley',
-    'rolls royce',
-    'tesla',
-    'mercedes'
+    'merchedes',
+    'toyato',
 ];
-/// let access the first element of array 
 
 
-console.log(cars[cars.length-cars.length]);
+cars.push("jobayed");
+cars.push("tanvir");
+cars.push("riyadh");
+let flen= cars.length;
+
+
+
+let text="<ul>";
+
+for(let i=0;i<flen;i++){
+    text+="<li>"+cars[i]+"</>";
+}
+
+text+="</ul>";
+
+
+document.getElementById("demo").innerHTML=text;
