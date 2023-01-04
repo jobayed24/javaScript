@@ -1,15 +1,27 @@
-// accessing array value through indexing number
+cars= [
+    'ferrari',
+    'saab',
+    'bmw',
+    'toyta',
+    'chevrolet',
+    'honda',
+    'nissan',
+    'ford',
+    'fiat',
+    'jeep',
+    'volkswagen',
+    'jaguar',
+    'audi',
+    'land rover',
+    'lexus',
+    'porsche',
+    'bugatti',
+    'bentley',
+    'rolls royce',
+    'tesla',
+    'mercedes'
+];
+/// let access the first element of array 
 
-carsfew= ['volvo','saab','bmw'];
 
-console.log(carsfew.length);
-
-// changed arrray value through index number
-
-cars=['volvo','saab','bmw','ferrai','toyata','hunday','frado','lend cruiser','rang rober','limojin'];
-cars[2]="newness";
-
-// console.log(cars);
-
-///  in javascript you can access full array by referring to the array name
-
+console.log(cars[cars.length-cars.length]);
