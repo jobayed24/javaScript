@@ -9,4 +9,7 @@ const cars=[
 
 ];
 
-console.log(Array.isArray(cars));
+console.log(cars instanceof Array);
+
+
+/// instanceof is act typeof method it true if the object is created by a given number
