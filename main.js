@@ -1,10 +1,12 @@
-// an unexpected error occured when declare the array with New Keyword
-
-const newArray=new Array(40);
-
-// with one element of array with new keyword shown unexpected error
+// How you recognize an array because the default type of array shows an object
 
 
+const cars=[
+    'saab',
+    'bmw',
+    'toyata',
+    'chevrolet',
 
+];
 
-
+console.log(Array.isArray(cars));
