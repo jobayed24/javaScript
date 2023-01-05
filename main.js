@@ -1,13 +1,14 @@
 const cars=[
-    'saab',
-    'bmw',
-    'chevrolet',
-    'merchedes',
-    'toyato',
+    
 ];
 
+let carsLength=cars.length;
+// cars[carsLength]="chevrolet";
+cars.push(cars[carsLength-1]="mercedes");
+cars.push(cars[carsLength-1]="Tesla");
+cars.push(cars[carsLength-1]="BMW");
 // looping through forEach function
-
+console.log(cars);
 text="<ul>";
 cars.forEach(loopfun);
 text+="</ul>";
