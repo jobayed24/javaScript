@@ -6,21 +6,16 @@ const cars=[
     'toyato',
 ];
 
+// looping through forEach function
 
-cars.push("jobayed");
-cars.push("tanvir");
-cars.push("riyadh");
-let flen= cars.length;
+text="<ul>";
+cars.forEach(loopfun);
+text+="</ul>";
 
-
-
-let text="<ul>";
-
-for(let i=0;i<flen;i++){
-    text+="<li>"+cars[i]+"</>";
+function loopfun(value){
+    text+="<li>"+value+"</li>";
 }
 
-text+="</ul>";
 
 
 document.getElementById("demo").innerHTML=text;
