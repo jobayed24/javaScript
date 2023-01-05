@@ -1,22 +1,10 @@
-const cars=[
-    
-];
+// an unexpected error occured when declare the array with New Keyword
 
-let carsLength=cars.length;
-// cars[carsLength]="chevrolet";
-cars.push(cars[carsLength-1]="mercedes");
-cars.push(cars[carsLength-1]="Tesla");
-cars.push(cars[carsLength-1]="BMW");
-// looping through forEach function
-console.log(cars);
-text="<ul>";
-cars.forEach(loopfun);
-text+="</ul>";
+const newArray=new Array(40);
 
-function loopfun(value){
-    text+="<li>"+value+"</li>";
-}
+// with one element of array with new keyword shown unexpected error
 
 
 
-document.getElementById("demo").innerHTML=text;
+
+
