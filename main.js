@@ -7,9 +7,9 @@ const cars=[
     
 ];
 
-let Stcars=cars.toString();
+let sepString=cars.join("' ");
 
-document.getElementById("demo").innerHTML=Stcars;
+document.getElementById("demo").innerHTML=sepString;
 
 console.log(cars);
 
