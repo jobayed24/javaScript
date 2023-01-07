@@ -1,15 +1,15 @@
-// How you recognize an array because the default type of array shows an object
-
-
 const cars=[
     'saab',
-    'bmw',
-    'toyata',
     'chevrolet',
-
+    'meredes',
+    'nissan',
+    'bmw',
+    
 ];
 
-console.log(cars instanceof Array);
+let Stcars=cars.toString();
 
+document.getElementById("demo").innerHTML=Stcars;
 
-/// instanceof is act typeof method it true if the object is created by a given number
+console.log(cars);
+
