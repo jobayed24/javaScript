@@ -1,15 +1,17 @@
-const cars=[
-    'saab',
-    'chevrolet',
-    'meredes',
-    'nissan',
-    'bmw',
-    
+const randNumber=[
+    4,
+    9,
+    10,
+    14,
+    16,
 ];
 
-let sepString=cars.join("' ");
 
-document.getElementById("demo").innerHTML=sepString;
 
-console.log(cars);
+document.getElementById("demo").innerHTML=randNumber.find(arrayFind);
+
+function arrayFind(number){
+    return number<15;
+}
+
 
