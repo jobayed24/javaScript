@@ -1,19 +1,12 @@
 const randNumber=[
-    4,
-    6,
-    18,
-    20,
+   9,
+   4,
+   2,
+   10,
 ];
 
 
 
-letValue=document.getElementById("value").value;
 
-function ageRandom(age){
-   return age> letValue;
-}
+document.getElementById("demo").innerHTML=randNumber.sort();
 
-
-function printNumber(){
-    document.getElementById("demo").innerHTML=randNumber.find(ageRandom);
-}
