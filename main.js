@@ -1,17 +1,19 @@
 const randNumber=[
     4,
-    9,
-    10,
-    14,
-    16,
+    6,
+    18,
+    20,
 ];
 
 
 
-document.getElementById("demo").innerHTML=randNumber.find(arrayFind);
+letValue=document.getElementById("value").value;
 
-function arrayFind(number){
-    return number<15;
+function ageRandom(age){
+   return age> letValue;
 }
 
 
+function printNumber(){
+    document.getElementById("demo").innerHTML=randNumber.find(ageRandom);
+}
