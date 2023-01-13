@@ -1,17 +1,32 @@
 const randNumber=[
-   9,
-   4,
-   2,
-   10,
-   11,
-   15,
-   28
+  {
+   FirstName: "tanvir",
+   LastName: "foysal"
+  },
+  {
+   FirstName: "shakhawat",
+   LastName: "hossain",
+  },
+  {
+   FirstName: "rasel",
+   LastName: "hayder",
+  }
+  
+  
 ];
 
 
-rrandomNumber=randNumber.join("-");
+concatFirsLast=randNumber.map(concatFirstname);
 
 
-document.getElementById("demo").innerHTML=rrandomNumber;
 
-console.log(rrandomNumber);
+
+function concatFirstname(item){
+
+return [item.FirstName,item.LastName].join(" ");
+}
+
+
+console.log(concatFirsLast);
+
+document.getElementById("demo").innerHTML=concatFirsLast;
