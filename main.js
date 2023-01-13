@@ -9,21 +9,9 @@ const randNumber=[
 ];
 
 
-ascenRandomNumber=randNumber.sort();
+rrandomNumber=randNumber.join("-");
 
 
+document.getElementById("demo").innerHTML=rrandomNumber;
 
-
-
-
-
-
-doc1=document.getElementById("demo").innerHTML=ascenRandomNumber;
-console.log(doc1)
-
-doc2=document.getElementById("demo2").innerHTML=randNumber;
-
-console.log(doc2);
-
-
-
+console.log(rrandomNumber);
