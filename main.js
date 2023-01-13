@@ -1,32 +1,25 @@
-const randNumber=[
-  {
-   FirstName: "tanvir",
-   LastName: "foysal"
-  },
-  {
-   FirstName: "shakhawat",
-   LastName: "hossain",
-  },
-  {
-   FirstName: "rasel",
-   LastName: "hayder",
-  }
-  
-  
+const randomNumbers=[
+   34,
+   12,
+   54,
+   13,
+   6,
+   9,
+   50,
+   01
 ];
 
 
-concatFirsLast=randNumber.map(concatFirstname);
+let newrandomNumbers=randomNumbers.filter(conditionNumber);
 
 
-
-
-function concatFirstname(item){
-
-return [item.FirstName,item.LastName].join(" ");
+function conditionNumber(randomNumber){
+   return randomNumber>=1;
 }
 
+let ascendingNumbers=newrandomNumbers.sort(function(a,b){return a-b});
 
-console.log(concatFirsLast);
+console.log(newrandomNumbers);
+console.log(ascendingNumbers);
 
-document.getElementById("demo").innerHTML=concatFirsLast;
+document.getElementById("demo").innerHTML=newrandomNumbers;
