@@ -1,25 +1,10 @@
-const randomNumbers=[
-   34,
-   12,
-   54,
-   13,
-   6,
-   9,
-   50,
-   01
-];
 
+function getAllParaElems(){
+  const allPara=document.getElementsByTagName("p");
 
-let newrandomNumbers=randomNumbers.filter(conditionNumber);
+  const allParaLenght=allPara.length;
 
-
-function conditionNumber(randomNumber){
-   return randomNumber>=1;
+   alert(`There are ${allParaLenght} Paragraph it's mean p tag`)
 }
 
-let ascendingNumbers=newrandomNumbers.sort(function(a,b){return a-b});
 
-console.log(newrandomNumbers);
-console.log(ascendingNumbers);
-
-document.getElementById("demo").innerHTML=newrandomNumbers;
