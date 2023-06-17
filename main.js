@@ -1,7 +1,6 @@
-// function store data in variable
 
 
-const x=function(a,b){return a*b}
+const myFunction=new Function("a","b","return a*b");
 
 
-document.getElementById("demo").innerHTML=x(3,5);
+document.getElementById("demo").innerHTML=myFunction(4,5);
