@@ -1,18 +1,12 @@
 const person={
-   fname: "Jobayed",
-   lname: "Hossen",
-   fullName:function(){
-      return this.fname+" "+this.lname;
+   firstName: "Jobayed",
+   lastName: "Hossen",
+   display: function(){
+      x=document.getElementById("demo").innerHTML=this.firstName+" "+this.lastName;
+      
    }
 }
 
 
-const member={
-   fname:"Jakir",
-   lname:"Khan",
-}
 
-
-const result=person.fullName.bind(member);
-
-console.log(result());
+setTimeout(person.display,3000);
