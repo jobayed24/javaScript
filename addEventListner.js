@@ -1,14 +1,11 @@
-window.addEventListener("click",myFunction);
+const ages = [32, 33, 12, 40];
 
-function myFunction(){
-    document.getElementById("demo").innerHTML="my name is Jobayed";
 
+
+function getData(age){
+    return age> document.getElementById("ageToCheck").value;
 }
 
-let value= document.getElementById("demo").innerText;
-
-let valueEncrypt=btoa(value);
-
-let valueDecrypt=atob(valueEncrypt);
-
-window.alert(valueDecrypt);
+function myFunction(){
+    document.getElementById("demo").innerHTML=ages.filter(getData);
+}
