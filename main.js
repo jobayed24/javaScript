@@ -1,12 +1,12 @@
 const person={
-   firstName: "Jobayed",
-   lastName: "Hossen",
+   firstName: "jobayed",
+   lastName: "hossen",
    display: function(){
-      x=document.getElementById("demo").innerHTML=this.firstName+" "+this.lastName;
-      
+     const x=document.getElementById("demo");
+      x.innerHTML=this.firstName+" "+this.lastName;
    }
 }
 
+const displayName=person.display.bind(person);
 
-
-setTimeout(person.display,3000);
+setTimeout(displayName,3000);
