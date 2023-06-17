@@ -1,26 +1,10 @@
-/// before es6 
-
-function sum(a,b){
-   if(b===undefined){
-      b=4;
+function sum(...args){
+   let sum=0;
+   for(let arg of args){
+      sum= sum+=arg;
    }
-
-   const x=a+b;
-   return x;
+   return sum;
 }
 
 
-document.getElementById("demo").innerHTML=sum(10);
-
-
-
-
-/// afeter es6
-
-function sum2(a,b=5){
-   const newSum=a+b;
-
-   return newSum;
-}
-
-document.getElementById("demo2").innerHTML=sum2(5);
+document.getElementById("demo").innerHTML=sum(45,54,33,23,23,32);
