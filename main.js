@@ -1,10 +1,23 @@
-function sum(...args){
-   let sum=0;
-   for(let arg of args){
-      sum= sum+=arg;
+class Car {
+   constructor(name) {
+     this.brand = name;
    }
-   return sum;
-}
+ 
+   present() {
+     return 'I have a ' + this.brand;
+   }
+ }
+ 
+ class Model extends Car {
+   constructor(name, mod) {
+     super(name);
+     this.model = mod;
+   }  
+   show() {
+     return this.present() + ', it is a ' + this.model;
+   }
+ }
+ 
+ const mycar = new Model("Ford", "Mustang");
 
-
-document.getElementById("demo").innerHTML=sum(45,54,33,23,23,32);
+ console.log(mycar.show());
