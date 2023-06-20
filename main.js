@@ -6,3 +6,12 @@ jobayed=function(){
 
 
 jobayed();
+
+
+/// after arrow function es6
+
+newjobayed=()=>{
+   console.log("My name New Es6");
+}
+
+newjobayed;
